@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #87CEEB;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+        }
+        h1{
+            text-align: center;
+            padding: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        .container{
+            color: #333333;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .button{
+            border: none;
+            text-decoration: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #E0E0E0;
+            color: #333333;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .qrcode{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        img{
+            height: 12rem;
+            width: 12rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="qrcode">
+        <h1>QR Code</h1>
+        <div class="container">
+            <img src=<%=qr_code %> alt="qr image">
+            <br>
+            <a href="/" role="button" class="button">BACK</a> <br> <br>
+            <a href="qr-code.png" role="button" class="button down-btn" download>DOWNLOAD</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #87CEEB;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+        }
+        h1{
+            text-align: center;
+            padding: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        .container{
+            color: #333333;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        label{
+            padding-bottom: 2rem;
+        }
+        .button{
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #E0E0E0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .qrcode{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="qrcode">
+        <h1>QR Code Generator</h1>
+    <div class="container">
+        <form action="/scan" method="POST" class="form">
+            <label for="qrcode">Enter your link: </label>
+            <input type="text" id="qrid" name="qrcodename"> <br>
+            <input type="submit" value="GENERATE QR" class="button">
+        </form>
+    </div>
+    </div>
+</body>
+</html>
