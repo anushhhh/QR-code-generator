@@ -1,0 +1,2 @@
+# QR-code-generator
+The QR Code Generator project is designed to offer a seamless web-based solution for generating QR codes tailored to a variety of needs. With a straightforward user interface, users can effortlessly input their desired information, such as URLs, text snippets, or contact details. The project's main objective is to provide a versatile tool that transforms this data into scannable and downloadable QR codes, enabling easy access to the encoded content.
